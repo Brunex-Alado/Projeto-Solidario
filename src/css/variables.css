@@ -1,0 +1,28 @@
+/* VARIÁVEIS GLOBAIS */
+:root {
+  /* CORES */
+  --color-bg: #0b0b0d;
+  --color-primary: #d4af37; /* dourado */
+  --color-secondary: #f5e6b3;
+  --color-white: #ffffff;
+  --color-gray: #aaaaaa;
+
+  /* GRADIENTES */
+  --gradient-gold: linear-gradient(135deg, #d4af37, #f5e6b3, #c9a27);
+
+  /* FONTES */
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* ESPAÇAMENTOS */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  /* BORDAS */
+  --radius: 8px;
+
+  /* SOMBRAS */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

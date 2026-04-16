@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Solidário</title>
+
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+
+<body>
+
+<div id="login-modal" class="login-modal hidden">
+  <div class="login-box">
+    <h2>Área Administrativa</h2>
+
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Senha">
+
+    <button id="login-btn" class="btn-primary">Entrar</button>
+    <button id="close-login" class="btn-secondary">Fechar</button>
+
+    <p id="login-error"></p>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-container">
+    <h1 class="logo">Projeto Solidário</h1>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#members">Membros</a></li>
+        <li><a href="#form">Cadastro</a></li>
+        <li><a href="#draw">Sorteio</a></li>
+        <li><a href="#" id="open-login">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO COM VÍDEO -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="src/assets/video_pomba_editado.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h2 class="fade-up">Siga os passos de Jesus</h2>
+    <p class="fade-up delay">
+      Transforme o amor em ação.
+    </p>
+    
+    <a href="#form" class="btn-primary fade-up delay-2">
+      Quero Servir
+    </a>
+  </div>
+</section>
+
+<!-- MEMBROS -->
+<section id="members" class="members-section reveal">
+  <div class="container">
+
+    <h2>Membros</h2>
+
+    <button id="toggle-members" class="btn-primary">
+      Ver membros cadastrados
+    </button>
+
+    <ul id="members-list" class="hidden"></ul>
+
+  </div>
+</section>
+
+<!-- MODAL EDITAR MEMBROS -->
+<div id="edit-modal" class="edit-modal hidden">
+  <div class="edit-box">
+
+    <h2>Editar Membro</h2>
+
+    <input type="text" id="edit-name" placeholder="Nome">
+    <input type="text" id="edit-phone" placeholder="Telefone">
+    <input type="date" id="edit-birthdate">
+
+    <div class="modal-actions">
+      <button id="save-edit" class="btn-primary">Salvar</button>
+      <button id="cancel-edit" class="btn-secondary">Cancelar</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- FORM -->
+<section id="form" class="form-section reveal">
+  <div class="container form-grid">
+
+    <div class="form-box reveal">
+      <h2>Cadastro de Voluntários</h2>
+
+      <form id="volunteer-form">
+
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Data de Nascimento</label>
+          <input type="date" id="birthdate" required>
+        </div>
+
+        <div class="form-group">
+          <label>Telefone</label>
+          <input type="tel" id="phone" required>
+        </div>
+
+      <div class="checkbox-single">
+        <label>
+         <input type="checkbox" id="participate">
+         Quero ser parte do corpo de Cristo
+        </label>
+
+        <div class="teams-info">
+          <p>Você poderá servir em uma das equipes:</p>
+          <ul>
+            <li>Equipe Compartilhando o Pão</li>
+            <li>Equipe Semeando a Palavra</li>
+            <li>Equipe Edificando a Casa</li>
+        </ul>
+        </div>
+      </div>
+
+        <button type="submit" class="btn-primary">Cadastrar</button>
+        <p id="form-feedback" class="form-feedback"></p>
+
+      </form>
+    </div>
+
+    <!-- IMAGEM CORRETA -->
+    <div class="form-image">
+      <img src="src/assets/mensagem.png" alt="Mensagem">
+    </div>
+
+  </div>
+</section>
+
+<!-- SORTEIO -->
+<section id="draw" class="draw-section reveal">
+  <div class="container">
+
+    <h2>Sorteio</h2>
+
+    <button id="draw-button" class="btn-primary">
+      Sortear Equipes
+    </button>
+
+    <div id="draw-result"></div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>
+    Desenvolvido por Bruno de Sousa Silva |
+    <a href="https://wa.me/5564992174180" target="_blank">
+      WhatsApp
+    </a>
+  </p>
+</footer>
+
+<script type="module" src="src/js/app.js"></script>
+
+</body>
+</html>

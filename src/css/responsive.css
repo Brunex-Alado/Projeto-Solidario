@@ -1,0 +1,118 @@
+/* DESKTOP - TABLET */
+@media (min-width: 768px) {
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: clamp(28px, 5vw, 48px);
+  }
+
+  .draw-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* MENU TOGGLE (HAMBÚRGUER) */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
+
+    transform: translateY(-200%);
+    transition: 0.3s ease;
+  }
+
+  .nav.active {
+    transform: translateY(0);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  
+  /* HERO */
+  .hero {
+    padding: 80px 15px 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    text-align: center;
+  }
+
+  /* FORM */
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .form-image {
+    order: -1; /* IMAGEM VEM ANTES DO FORMULÁRIO */
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-image img {
+    max-width: 220px;
+    width: 100%;
+    height: 0 auto;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+
+  /* MEMBERS */
+  .members-section {
+    text-align: center;
+  }
+
+  /* DRAW */
+  .draw-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+}
