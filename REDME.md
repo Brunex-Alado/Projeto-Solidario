@@ -33,19 +33,19 @@ A aplicação permite que usuários se cadastrem e que administradores realizem 
 
 ---
 
-![image](https://raw.githubusercontent.com/Brunex-Alado/ LINK DO GITHUB.png)
+![image](https://raw.githubusercontent.com/Brunex-Alado/Projeto-Solidario/refs/heads/main/prints/mobile.png)
 
 <br/>
 
-![image](https://raw.githubusercontent.com/Brunex-Alado/ LINK DO GITHUB.png)
+![image](https://raw.githubusercontent.com/Brunex-Alado/Projeto-Solidario/refs/heads/main/prints/web01.png)
 
 <br/>
 
-![image](https://raw.githubusercontent.com/Brunex-Alado/ LINK DO GITHUB.png)
+![image](https://raw.githubusercontent.com/Brunex-Alado/Projeto-Solidario/refs/heads/main/prints/web02.png)
 
 <br/>
 
-![image](https://raw.githubusercontent.com/Brunex-Alado/ LINK DO GITHUB.png)
+![image](https://raw.githubusercontent.com/Brunex-Alado/Projeto-Solidario/refs/heads/main/prints/web03.png)
 
 <br/>
 
